@@ -15,4 +15,17 @@ Make sure you have the following tools installed:
 
    ```bash
    git clone https://github.com/giftmbanda/accenture.git
+
+2. Install dependencies and run accenture-web:
+
+   ```bash
+   cd accenture-web
+   docker build -t accenture-web .
+   docker run -p 8080:80 accenture-web
+
+
+3. Install dependencies and run accenture-api:
+
+   ```bash
    cd accenture-api
+   docker-compose up
