@@ -1,0 +1,11 @@
+# Ignore node_modules for a clean build in Docker
+node_modules/
+
+# Ignore build artifacts
+build/
+dist/
+
+# Ignore development files and directories
+*.log
+.DS_Store
+.env*

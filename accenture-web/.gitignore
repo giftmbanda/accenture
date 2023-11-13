@@ -1,0 +1,14 @@
+# Node.js
+node_modules/
+
+# Build files
+build/
+dist/
+out/
+
+# Dependency lock files
+yarn.lock
+package-lock.json
+
+# .env files
+.env*

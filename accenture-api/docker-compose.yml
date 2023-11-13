@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  mancala-service:
+    container_name: accenture-api
+    image: accenture
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    depends_on:
+      - mongodb-service
+    restart: always
+
+  mongodb-service:
+    container_name: MongoDB
+    image: mongo:latest
+    ports:
+      - "27017:27017"  # Map container's port 27017 to host's port 27017
+    volumes:
+      - mongodb_data:/data/db   # MongoDB data volume
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: "" # no username
+      MONGO_INITDB_ROOT_PASSWORD: "" # no password
+      MONGO_INITDB_DATABASE: mancaladb
+    restart: always
+
+volumes:
+  mongodb_data:

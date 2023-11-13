@@ -1,0 +1,18 @@
+# Node.js
+node_modules/
+
+# TypeScript
+*.tsbuildinfo
+
+# Environment variables
+.env
+
+# Build files
+dist/
+
+# Visual Studio Code
+.vscode/
+
+# Dependency lock files
+yarn.lock
+package-lock.json
