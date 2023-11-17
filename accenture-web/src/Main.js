@@ -8,7 +8,7 @@ const MainContent = () => {
                     <div class="col">
 
                         <div class="card h-100">
-                            <img src={require('./assets/dragon.jpeg')} class="card-img-top" alt="Hollywood Sign on The Hill" />
+                            <img src={require('./assets/olympian.jpeg')} class="card-img-top" alt="Hollywood Sign on The Hill" />
                             <div class="card-body">
                                 <h5 class="card-title">The Olympian</h5>
                                 <p class="card-text">The only athlete in the world to do her Olympic routine in 2020.
@@ -19,7 +19,7 @@ const MainContent = () => {
 
                     <div class="col">
                         <div class="card h-100">
-                            <img src={require('./assets/olympian.jpeg')} class="card-img-top" alt="Palm Springs Road" />
+                            <img src={require('./assets/dragon.jpeg')} class="card-img-top" alt="Palm Springs Road" />
                             <div class="card-body">
                                 <h5 class="card-title">The Savings Jar</h5>
                                 <p class="card-text">Grow your savings treasure and grow your dragon.</p>
